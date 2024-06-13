@@ -11,7 +11,7 @@ class Autentifikasi extends CI_Controller
 
   public function signin()
   {
-    $data['judul'] = 'Registrasi Member';
+    $data['judul'] = 'Signin';
     $this->load->view('templates/aute_header', $data);
     $this->load->view('autentifikasi/signin');
     $this->load->view('templates/aute_footer');

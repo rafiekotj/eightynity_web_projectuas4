@@ -13,7 +13,7 @@
                   </h1>
                 </div>
 
-                <form class="user" method="post" action="<?= base_url('autentifikasi/registrasi'); ?>">
+                <form class="user" method="post" action="<?= base_url('autentifikasi/signin'); ?>">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama'); ?>" />
                     <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
