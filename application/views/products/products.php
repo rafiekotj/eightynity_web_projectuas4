@@ -1,9 +1,9 @@
-<div class="container produk">
-  <h2>Our Products</h2>
-  <div class="row produk_baris1">
-    <div class="col-md-4 produk_box">
+<div class="container" style="padding: 128px 0;">
+  <h2 style="text-align: center; margin-bottom: 32px; font-weight: 600;">Our Products</h2>
+  <div class="row" style="margin-bottom: 16px">
+    <div class="col-md-4">
       <div class="card">
-        <img src="pictures/Polo Putih.png" class="card-img-top" />
+        <img src="<?= base_url('assets/'); ?>/img/poloPutih.png" class="card-img-top" />
         <div class="card-body">
           <h3 class="card-title">White Polo Shirt</h3>
           <p class="card-text">White polo shirt.</p>
@@ -11,9 +11,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 produk_box">
+    <div class="col-md-4">
       <div class="card">
-        <img src="pictures/Polo Navy.png" class="card-img-top" />
+        <img src="<?= base_url('assets/'); ?>/img/poloNavy.png" class="card-img-top" />
         <div class="card-body">
           <h3 class="card-title">Navy Polo Shirt</h3>
           <p class="card-text">Navy polo shirt.</p>
@@ -21,9 +21,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 produk_box">
+    <div class="col-md-4">
       <div class="card">
-        <img src="pictures/Kaos Abu Tua.png" class="card-img-top" />
+        <img src="<?= base_url('assets/'); ?>/img/kaosAbuTua.png" class="card-img-top" />
         <div class="card-body">
           <h3 class="card-title">Dark Grey Shirt</h3>
           <p class="card-text">Dark grey shirt.</p>
@@ -32,10 +32,10 @@
       </div>
     </div>
   </div>
-  <div class="row produk_baris2">
-    <div class="col-md-4 produk_box">
+  <div class="row">
+    <div class="col-md-4">
       <div class="card">
-        <img src="pictures/Kaos Sand.png" class="card-img-top" />
+        <img src="<?= base_url('assets/'); ?>/img/kaosSand.png" class="card-img-top" />
         <div class="card-body">
           <h3 class="card-title">Sand Shirt</h3>
           <p class="card-text">Sand shirt.</p>

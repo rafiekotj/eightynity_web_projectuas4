@@ -1,7 +1,7 @@
-<div class="container about">
-  <h2>About Us</h2>
-  <img src="pictures/Kelompok 8.jpg" class="img-fluid" />
-  <p>
+<div class="container" style="padding: 128px 0;">
+  <h2 style="text-align: center; margin-bottom: 32px; font-weight: 600;">About Us</h2>
+  <img src="<?= base_url('assets/'); ?>/img/kelompok8.jpg" class="img-fluid" />
+  <p style="text-align: center;">
     Kami adalah sebuah kelompok yang terinspirasi oleh berbagai kreativitas,
     inovatifitas, serta keindahan estetika dalam setiap perincian
     produksinya. Didirikan pada 2022, Eightynity telah berkomitmen untuk
