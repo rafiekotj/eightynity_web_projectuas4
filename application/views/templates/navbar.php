@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
 
   <!-- Logo -->
-  <a class="navbar-brand" href="">Eightynity</a>
+  <a class="navbar-brand" href=""><span class="brandlogo">Eightynity</span></a>
 
   <!-- Drawer -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +12,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="">Home</a>
+        <a class="nav-link" href="<?= base_url(); ?>home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">Products</a>
+        <a class="nav-link" href="<?= base_url(); ?>products">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">About Us</a>
+        <a class="nav-link" href="<?= base_url(); ?>aboutus">About Us</a>
       </li>
     </ul>
 

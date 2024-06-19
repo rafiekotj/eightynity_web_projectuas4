@@ -16,8 +16,8 @@
   <script type="text/javascript" src="<?= base_url('assets/'); ?>datatable/jquery.dataTables.js'; ?>"></script>
   <script type="text/javascript" src="<?= base_url('assets/'); ?>datatable/datatables.js'; ?>"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.css" rel="stylesheet">
+  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets/'); ?>css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="wrapper">
