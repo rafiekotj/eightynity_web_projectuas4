@@ -17,7 +17,7 @@
                 <!-- Status message -->
                 <?php
                 if (!empty($success_msg)) {
-                  echo '<p class="status-msg success">' . $success_msg . '</p>';
+                  echo '<p class="status-msg success text-center" style="color: #28a745;">' . $success_msg . '</p>';
                 } elseif (!empty($error_msg)) {
                   echo '<p class="status-msg error">' . $error_msg . '</p>';
                 }
