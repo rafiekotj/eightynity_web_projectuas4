@@ -13,28 +13,29 @@
       <li class="nav-item active">
         <a class="nav-link" href="<?= base_url(); ?>home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="<?= base_url(); ?>products">Products</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url('checkout/order_history'); ?>">History</a>
+      </li>
+      <li class="nav-item active">
         <a class="nav-link" href="<?= base_url(); ?>aboutus">About Us</a>
       </li>
     </ul>
 
     <!-- Navbar Kanan -->
     <ul class="navbar-nav ml-auto">
-      <?php if (!$this->session->userdata('isUserLoggedIn')) { ?>
-        <li class="nav-item">
-          <a class="nav-link" href="<?= base_url(); ?>autentifikasi">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?= base_url(); ?>autentifikasi/signin">Signin</a>
-        </li>
-      <?php } else { ?>
-        <li class="nav-item">
-          <a href="<?php echo base_url('users/logout'); ?>" class="nav-link logout">Logout</a>
-        </li>
-      <?php } ?>
+      <li class="nav-item active">
+        <a href="<?php echo base_url('cart'); ?>" class="nav-link cart" style="margin-right: 16px;">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a href="<?php echo base_url('users/logout'); ?>" class="nav-link logout">
+          <i class="fas fa-sign-out-alt"></i>
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

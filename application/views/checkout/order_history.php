@@ -1,9 +1,8 @@
 <div class="container" style="padding: 128px 0;">
-  <h2 style="text-align: center; margin-bottom: 32px; font-weight: 600;">Order History</h2>
+  <h2 style="text-align: center; margin-bottom: 48px; font-weight: 600;">Order History</h2>
   <table class="table">
     <thead>
       <tr>
-        <th>Order ID</th>
         <th>Name</th>
         <th>Email</th>
         <th>Address</th>
@@ -15,7 +14,6 @@
     <tbody>
       <?php foreach ($order_history as $order) { ?>
         <tr>
-          <td><?= $order['id']; ?></td>
           <td><?= $order['name']; ?></td>
           <td><?= $order['email']; ?></td>
           <td><?= $order['address']; ?></td>

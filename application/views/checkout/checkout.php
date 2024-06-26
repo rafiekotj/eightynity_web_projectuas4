@@ -3,25 +3,25 @@
   <form action="<?php echo base_url('checkout/process'); ?>" method="post">
     <div class="row">
       <div class="col-md-6">
-        <label for="name">Name:</label>
-        <input type="text" name="name" required>
+        <label for="name" style="font-weight: 600;">Name:</label>
+        <input type="text" name="name" required style="width: 100%; height: 40px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 16px;">
       </div>
       <div class="col-md-6">
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
+        <label for="email" style="font-weight: 600;">Email:</label>
+        <input type="email" name="email" required style="width: 100%; height: 40px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 16px;">
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <label for="address">Address:</label>
-        <textarea name="address" required></textarea>
+        <label for="address" style="font-weight: 600;">Address:</label>
+        <textarea name="address" required style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 16px;"></textarea>
       </div>
       <div class="col-md-6">
-        <label for="phone">Phone:</label>
-        <input type="tel" name="phone" required>
+        <label for="phone" style="font-weight: 600;">Phone:</label>
+        <input type="tel" name="phone" required style="width: 100%; height: 40px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 16px;">
       </div>
     </div>
-    <h3>Order Summary</h3>
+    <h4 style="font-weight: 600">Order Summary</h4>
     <table class="table">
       <thead>
         <tr>
@@ -48,6 +48,8 @@
         </tr>
       </tfoot>
     </table>
-    <button type="submit" class="btn btn-primary">Place Order</button>
+    <div style="display: flex; justify-content: flex-end;">
+      <button type="submit" class="btn btn-secondary">Place Order</button>
+    </div>
   </form>
 </div>

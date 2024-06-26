@@ -26,15 +26,15 @@
                 <!-- Login form -->
                 <form action="" method="post">
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-user" name="email" placeholder="EMAIL" required="">
+                    <input type="email" class="form-control form-control-user" name="email" placeholder="Email" required="">
                     <?php echo form_error('email', '<p class="help-block">', '</p>'); ?>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" name="password" placeholder="PASSWORD" required="">
+                    <input type="password" class="form-control form-control-user" name="password" placeholder="Password" required="">
                     <?php echo form_error('password', '<p class="help-block">', '</p>'); ?>
                   </div>
                   <div class="send-button">
-                    <input type="submit" class="form-control form-control-user" name="loginSubmit" value="LOGIN">
+                    <input type="submit" class="form-control form-control-user btn btn-secondary btn-user btn-block" name="loginSubmit" value="Masuk">
                   </div>
                 </form>
 
@@ -43,7 +43,7 @@
                   <a class="small" href="">Lupa Password?</a>
                 </div>
                 <div class="text-center small">
-                  Don't have an account? <a href="<?php echo base_url('users/registration'); ?>">Register</a>
+                  Tidak Memiliki Akun? <a href="<?php echo base_url('users/registration'); ?>">Register</a>
                 </div>
               </div>
             </div>
