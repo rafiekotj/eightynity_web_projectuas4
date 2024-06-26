@@ -32,7 +32,7 @@
         </li>
       <?php } else { ?>
         <li class="nav-item">
-          <a href="<?php echo base_url('users/logout'); ?>" class="logout">Logout</a>
+          <a href="<?php echo base_url('users/logout'); ?>" class="nav-link logout">Logout</a>
         </li>
       <?php } ?>
     </ul>
