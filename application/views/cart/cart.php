@@ -30,4 +30,5 @@
     </tbody>
   </table>
   <p style="text-align: right; margin-top: 16px;">Total: Rp <?= number_format($total, 2, ',', '.'); ?></p>
+  <a href="<?= base_url('checkout/process'); ?>" class="btn btn-primary">Checkout</a>
 </div>

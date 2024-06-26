@@ -19,6 +19,7 @@
         Contact Us
         <i class="fab fa-whatsapp" style="font-size: 24px; margin-left: 8px; color: #25D366"></i>
       </a>
+      <a href="<?php echo base_url('checkout/order_history'); ?>" class="btn btn-primary">View Order History</a>
     </div>
     <div class="col-md-1"></div>
     <div class="col-md-4 d-flex justify-content-center align-items-center" style="margin: 86px 0 54px 0;">

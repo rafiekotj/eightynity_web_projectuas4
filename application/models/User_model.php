@@ -15,6 +15,14 @@ class User_model extends CI_Model
      * Fetch user data from the database 
      * @param array filter data based on the passed parameters 
      */
+
+  public function get_user_by_id($id)
+  {
+    $this->db->where('id', $id);
+    $query = $this->db->get($this->table);
+    return $query->row_array();
+  }
+
   function getRows($params = array())
   {
     $this->db->select('*');
