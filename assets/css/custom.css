@@ -8,3 +8,19 @@ body {
 .brandlogo {
 	font-family: "Rock Salt", cursive;
 }
+
+.navbar-nav .nav-item:last-child {
+	margin-left: 10px;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #333;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+	background-color: #333;
+	color: #fff;
+}

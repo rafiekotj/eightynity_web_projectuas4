@@ -4,11 +4,11 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Price</th>
-        <th>Subtotal</th>
-        <th>Action</th>
+        <th width="40%">Product</th>
+        <th width="20%">Quantity</th>
+        <th width="20%">Price</th>
+        <th width="20%">Subtotal</th>
+        <th width="20%">Action</th>
       </tr>
     </thead>
     <tbody>

@@ -8,7 +8,11 @@
       <h3 class="card-title"><?= $product['name']; ?></h3>
       <p class="card-text"><?= $product['description']; ?></p>
       <p class="card-text">Rp <?= number_format($product['price'], 0, ',', '.'); ?></p>
-      <a href="<?= site_url('cart/add/' . $product['id']); ?>" class="btn btn-primary">Add to Cart</a>
+      <?php if ($this->session->userdata('logged_in')) { ?>
+        <a href="<?= site_url('cart/add/' . $product['id']); ?>" class="btn btn-primary">Add to Cart</a>
+      <?php } else { ?>
+        <a href="<?= site_url('login'); ?>" class="btn btn-primary">Login to Add to Cart</a>
+      <?php } ?>
     </div>
   </div>
 </div>

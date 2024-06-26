@@ -13,10 +13,10 @@ class Cart_model extends CI_Model
 
   public function get_total_cost($cart)
   {
-    $total_cost = 0;
+    $total = 0;
     foreach ($cart as $item) {
-      $total_cost += $item['price'] * $item['quantity'];
+      $total += $item['price'] * $item['quantity'];
     }
-    return $total_cost;
+    return $total;
   }
 }
