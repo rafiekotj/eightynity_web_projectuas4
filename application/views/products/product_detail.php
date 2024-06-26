@@ -7,6 +7,11 @@
     <div class="col-md-6">
       <p class="card-text"><?php echo $product['description']; ?></p>
       <p class="card-text">Rp <?php echo number_format($product['price'], 2, ',', '.'); ?></p>
+      <form action="<?= base_url('cart/add'); ?>" method="post">
+        <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+        <input type="number" name="quantity" value="1" min="1">
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
+      </form>
     </div>
   </div>
 </div>
