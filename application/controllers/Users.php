@@ -18,30 +18,30 @@ class Users extends CI_Controller
   public function index()
   {
     if ($this->isUserLoggedIn) {
-      redirect('users/account');
+      redirect('home');
     } else {
       redirect('users/login');
     }
   }
 
-  public function account()
-  {
-    $data = array();
-    if ($this->isUserLoggedIn) {
-      $con = array(
-        'id' => $this->session->userdata('userId')
-      );
-      $data['user'] = $this->user->getRows($con);
+  // public function home()
+  // {
+  //   $data = array();
+  //   if ($this->isUserLoggedIn) {
+  //     $con = array(
+  //       'id' => $this->session->userdata('userId')
+  //     );
+  //     $data['user'] = $this->user->getRows($con);
 
-      // Pass the user data and load view 
-      $data['judul'] = 'Home';
-      $this->load->view('templates/aute_header', $data);
-      $this->load->view('users/account', $data);
-      $this->load->view('templates/aute_footer');
-    } else {
-      redirect('users/login');
-    }
-  }
+  //     // Pass the user data and load view 
+  //     $data['judul'] = 'Home';
+  //     $this->load->view('templates/aute_header', $data);
+  //     $this->load->view('home/home', $data);
+  //     $this->load->view('templates/aute_footer');
+  //   } else {
+  //     redirect('users/login');
+  //   }
+  // }
 
   public function login()
   {
@@ -75,7 +75,7 @@ class Users extends CI_Controller
         if ($checkLogin) {
           $this->session->set_userdata('isUserLoggedIn', TRUE);
           $this->session->set_userdata('userId', $checkLogin['id']);
-          redirect('users/account/');
+          redirect('home/');
         } else {
           $data['error_msg'] = 'Wrong email or password, please try again.';
         }

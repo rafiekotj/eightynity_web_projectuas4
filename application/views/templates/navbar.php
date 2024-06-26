@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
-
   <!-- Logo -->
   <a class="navbar-brand" href=""><span class="brandlogo">Eightynity</span></a>
 
@@ -11,8 +10,8 @@
   <!-- Navbar Item -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="<?= base_url(); ?>home">Home</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="<?= base_url(); ?>home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?= base_url(); ?>products">Products</a>
@@ -24,22 +23,18 @@
 
     <!-- Navbar Kanan -->
     <ul class="navbar-nav ml-auto">
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#" id="dark_icon">
-          <i class="fa-regular fa-sun fa-lg" style="color: #333"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="color: #333">
-          <i class="fa-solid fa-basket-shopping fa-lg"></i>
-        </a>
-      </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="<?= base_url(); ?>autentifikasi">Login</a>
-      </li>
-      <li>
-        <a class="nav-link" href="<?= base_url(); ?>autentifikasi/signin">Signin</a>
-      </li>
+      <?php if (!$this->session->userdata('isUserLoggedIn')) { ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url(); ?>autentifikasi">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url(); ?>autentifikasi/signin">Signin</a>
+        </li>
+      <?php } else { ?>
+        <li class="nav-item">
+          <a href="<?php echo base_url('users/logout'); ?>" class="logout">Logout</a>
+        </li>
+      <?php } ?>
     </ul>
   </div>
 </nav>
